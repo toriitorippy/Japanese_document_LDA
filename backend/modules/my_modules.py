@@ -91,7 +91,6 @@ def make_chara(file):
             chara_list.append(chara[i].split('、')[1]+chara[i].split('、')[0])
     return chara_list
 
-
 if __name__ == "__main__":
     #（）で分割し、関係ない単語を取り除いたリスト作成
     text_list = fix_xml(remove_unrelated(word_list))

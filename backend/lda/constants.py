@@ -1,4 +1,4 @@
-from my_modules import *
+from lda.my_modules import *
 
 "minkeiki_xml_file"
 MINKEIKI_XML = "../data/xml/minkeiki_fin4.xml"

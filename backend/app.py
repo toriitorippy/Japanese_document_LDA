@@ -8,6 +8,7 @@ from random import *
 import csv
 import lda.get_new_lda as lda
 import lda.load_lda as load_lda
+import lda.flex_lda as flex_lda
 import pandas as pd
 import json
 from modules.Encoder import *
@@ -409,6 +410,9 @@ def uploadFile(mineType="text/csv"):
 
 @app.route('/doLda', methods=['POST'])
 def doLda():
+    flda = flex_lda.FLDA(10,0,"gumaiki.xml","person.csv")
+    # mlda.run_LDA()
+    flda.get_result()
     print(request.form.to_dict())
     response = {'text': "success"}
     return jsonify(response)

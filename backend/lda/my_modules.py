@@ -4,7 +4,6 @@ import gensim
 import numpy as np
 import csv
 import pandas as pd
-from tqdm import tqdm
 import json
 
 
@@ -57,6 +56,27 @@ def make_chara(file):
         if "、" in chara[i]:
             chara_list.append(chara[i].split('、')[1]+chara[i].split('、')[0])
     return chara_list
+
+def get_name(x):
+  split = x.split("、")
+  answer = x
+  if len(split) == 2:
+    answer = split[1] + split[0]
+  return answer
+
+def get_first_name(x):
+  split = x.split("、")
+  answer = x
+  if len(split) == 2:
+    answer = split[0]
+  return answer
+
+def get_family_name(x):
+  split = x.split("、")
+  answer = x
+  if len(split) == 2:
+    answer = split[1]
+  return answer
 
 #copy from https://wtnvenga.hatenablog.com/entry/2018/05/27/113848
 class MyEncoder(json.JSONEncoder):

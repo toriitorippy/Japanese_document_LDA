@@ -4,4 +4,7 @@ Flask-cors
 Flask_restful
 pandas
 lxml
+bs4
+pandas
+sentencepiece
 jupyterlab==1.2.3

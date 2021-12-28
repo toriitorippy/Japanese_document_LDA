@@ -10,6 +10,8 @@ node_modules
 *.tfidf
 *.xls
 *.pkl
+*.model
+*.vocab
 /jupyter
 /backend/data
 
