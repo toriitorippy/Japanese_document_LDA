@@ -30,7 +30,7 @@
       <el-input-number v-model="textInput" :min="2" :max="20"></el-input-number>
     </div>
     <br />
-    <el-button type="primary" round @click="doLda">get lda</el-button>
+    <el-button type="primary" round @click="doLda">実行</el-button>
   </b-container>
 </template>
 
@@ -56,6 +56,13 @@ export default {
         {
           content: null,
           name: 'person.csv',
+          icon: 'mdi-message-text-outline',
+          mimeType: 'text/csv',
+          msg: '',
+        },
+        {
+          content: null,
+          name: 'role.csv',
           icon: 'mdi-message-text-outline',
           mimeType: 'text/csv',
           msg: '',

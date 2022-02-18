@@ -1,14 +1,14 @@
-from nltk import ngrams
-import gensim
-import numpy as np
+# from nltk import ngrams
+# import gensim
+# import numpy as np
 from collections import Counter
-from sklearn import datasets
-import matplotlib.pyplot as plt
-from wordcloud import WordCloud
-import spacy
-from spacy import displacy
+# from sklearn import datasets
+# import matplotlib.pyplot as plt
+# from wordcloud import WordCloud
+# import spacy
+# from spacy import displacy
 import csv
-import pandas as pd
+# import pandas as pd
 import re
 
 def collect_ngram_words(docs, n):
